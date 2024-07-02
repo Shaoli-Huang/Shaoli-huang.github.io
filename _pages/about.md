@@ -12,7 +12,7 @@ profile:
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 I am currently a senior researcher at Tencent AI Lab. I obtained my Ph.D. from the University of Technology Sydney under the supervision of Professor Tao Dacheng and have served as a researcher fellow at the University of Sydney. My research interests lean towards practical applications with a strong emphasis on digital human-related technologies. These include video-based human motion capture, motion generation, and motion retargeting, among others. I am passionate about exploring and developing cutting-edge solutions to drive advancements in these fields.
 
