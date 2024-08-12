@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Three papers accepted by **<span style="color:blue">ECCV 2024</span>**! :sparkles: 
+Three papers (one Oral) accepted by **<span style="color:blue">ECCV 2024</span>**! :sparkles: 
