@@ -1,6 +1,39 @@
 ---
 layout: default
 ---
+<head>
+      <style>
+      .column {
+            width: 100%; /* 占满父容器宽度，也可设置固定宽度如300px等，根据需求调整 */
+            margin: 0 auto; /* 水平居中显示，可按需修改 */
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+      .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* 顶部对齐，也可根据需求选择其他对齐方式 */
+            align-items: stretch; /* 让子元素宽度占满容器宽度 */
+        }
+
+      .project-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px; /* 标题和描述之间添加一点间隔 */
+        }
+
+      .project-description {
+            margin-bottom: 15px; /* 描述和视频之间添加间隔 */
+        }
+
+        video {
+            width: 100%;
+            max-width: 100%; /* 确保视频宽度不会超出容器，实现自适应 */
+            height: auto; /* 高度随宽度等比例自适应变化 */
+        }
+    </style>
+</head>
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
@@ -39,6 +72,28 @@ layout: default
     {% endif %}
 
     <div class="clearfix">{{ content }}</div>
+
+    <div class="column">
+        <div class="content">
+          <div class="project-title">Project 1: Audio-driven Full-body Motion Generation</div>
+          <div class="project-description">This project focuses on generating natural, stable, and rhythmically synchronized full-body motions driven by speech input.The system aims to provide a robust solution for applications in virtual reality, digital entertainment, and human-computer interaction, ensuring high fidelity and realism in audio-driven motion generation. Find more demo videos in <a href="hologest.github.io" style="color:red">hologest.github.io</a>. </div>
+            <video id="dollyzoom" controls loop playsinline>
+                <source src="assets/video/hologest.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="content">
+            <div class="project-title">Project 2: Visual-based Motion Capture</div>
+            <div class="project-description">This project aims to extract high-quality human motion data directly from video input. 
+            The extracted motion data can be used for video-driven 2D/3D digital human animation and the creation of large-scale 3D human motion datasets, supporting applications in virtual reality, gaming, and AI-driven character simulation.</div>
+            <video id="dollyzoom" autoplay controls loop playsinline>
+                <source src="assets/video/mocap.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
 
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
